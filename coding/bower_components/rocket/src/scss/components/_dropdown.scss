@@ -1,0 +1,108 @@
+/// $key: `$child $show $style default`
+/// @group components
+/// @param {number | list} $key - key 
+/// @example markup -markup
+/// <!-- 
+///   if you set $show: click, add these markup to your dropdown 
+///   make sure the value of "for" match the checkbox id
+///   -->
+/// 
+/// <div class="dropdown">
+///   <span>dropdown</span>
+///   <input type="checkbox" name="" id="dropdown">
+///   <label for="dropdown">▼</label>
+///   <ul>
+///     <li><a href="">item01</a></li>
+///     <li><a href="">item02</a></li>
+///     <li><a href="">item03</a></li>
+///   </ul>
+/// </div>
+/// @example scss -scss
+/// .dropdown { @include dropdown(ul hover display default); }
+/// // child: ul;
+/// // show: hover; (hover | click)
+/// // style: display; (scale | display)
+/// // default: true; (use default dropdown menu style)
+///
+/// @link http://creatiointl.org/gallery/william/rocket/components-dropdown.php demo
+/// @link https://github.com/ganlanyuan/rocket full document
+
+@mixin dropdown(
+  $key:
+    'ul'
+    'hover'
+    'scale'
+){
+  $check: append(join($ro-dropdown-show, $ro-dropdown-style, comma), 'default', comma);
+
+  $child: ro-get-type($key, 'string', $check, 'ul');
+  $show: ro-get($key, $ro-dropdown-show, 'hover');
+  $style: ro-get($key, $ro-dropdown-style, 'scale');
+  $default: ro-get($key, 'default');
+  $path: false;
+
+  
+  // *** output *** //
+  position: relative;
+  @if $show == 'hover' {
+    cursor: pointer;
+  }
+  // hide checkbox. 
+  // IE8 don't support click event on "display: none" element.
+  > [type='checkbox'] { @extend %ro-hidden-checkbox; }
+  > #{$child} {
+    // basic menu style
+    @extend %dropdown-menu;
+    
+    // hide menu
+    @if $style == 'scale' {
+      @extend %dropdown-menu-hide;
+      .no-csstransforms & { display: none; }
+    } @else if $style == 'display' {
+      display: none;
+    }
+
+    // default menu style
+    $bgc: #fff;
+    $padding: 0.31em 1.25em;
+    $border: 1px solid #dbdbdb;
+    $border-radius: 0.19em;
+    $shadow: rgba(0,0,0,0.15) 0px 6px 12px;
+
+    @if $default {
+      background-color: $bgc;
+      @if $border { border: $border; }
+      @if $border-radius { border-radius: $border-radius; }
+      @if $shadow { box-shadow: $shadow; }
+      .current a,li:hover a { background-color: analogous($bgc 10%);}
+      li { 
+        @extend %ro-global-transition; 
+        &:first-child > a { padding-top: nth($padding, 1) * 2;}
+        &:last-child > a { padding-bottom: nth($padding, 1) * 2;}
+      }
+      a { 
+        display: block;
+        padding: $padding;
+        color: contrast($bgc);
+        &:hover { text-decoration: none; }
+      }
+    }
+  }
+
+  // set path
+  @if $show == 'hover' {
+    $path: '&:hover >';
+  } @else if $show == 'click' {
+    $path: '> input:checked ~';
+  }
+
+  // show
+  #{$path} #{$child} {
+    @if $style == 'scale' {
+      @extend %dropdown-menu-show;
+      .no-csstransforms & { display: block; }
+    } @else if $style == 'display' {
+      display: block;
+    }
+  }
+}

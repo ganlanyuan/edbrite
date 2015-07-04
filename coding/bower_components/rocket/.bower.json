@@ -1,0 +1,52 @@
+{
+  "name": "rocket",
+  "version": "2.2.1",
+  "main": [
+    "./src/scss/rocket.scss",
+    "./src/js/kit.js",
+    "./dist/kit.min.js"
+  ],
+  "keywords": [
+    "css",
+    "mixins",
+    "scss",
+    "sass",
+    "grid",
+    "color",
+    "type",
+    "breakpoint"
+  ],
+  "authors": [
+    "William Lin <ganlanyuan@gmail.com>"
+  ],
+  "description": "Rocket is a powerful tool to help web developer handle layout and other components easily.",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    ".gitignore",
+    ".sublime-project",
+    ".codekit",
+    "sftp-config.json",
+    "bower.json",
+    "README.md",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "homepage": "https://github.com/ganlanyuan/rocket",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ganlanyuan/rocket.git"
+  },
+  "dependencies": {},
+  "_release": "2.2.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.2.1",
+    "commit": "ed5626718dd15593f59f0bac0f76b2ca9600c3aa"
+  },
+  "_source": "git://github.com/ganlanyuan/rocket.git",
+  "_target": "2.2.1",
+  "_originalSource": "rocket"
+}

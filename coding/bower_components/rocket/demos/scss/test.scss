@@ -1,0 +1,48 @@
+@charset "UTF-8";
+$font-path:"../../src/icon-font";
+@import "../../src/scss/rocket"; 
+ul, ol { margin: 0; padding: 0; }
+li { list-style: none; }
+img {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+%common {
+  background-color: #dbdbdb;
+  margin-bottom: 20px;
+}
+$main:(8 of 12);
+$main-left: (9 of 12);
+.container { @include container(); }
+.main {
+  @include span($main 2%);
+  &-left,
+  &-right { @extend %common; }
+  @include breakpoint('min' 640 ) {
+    &-left { @include span($main-left (2% / span($main))); }
+    &-right { @include span(3 of 12 (2% / span($main)) last); }
+    .news { @include span(7 (2% / (span($main) * span($main-left)))); }
+    .popular { @include span(5 (2% / (span($main) * span($main-left))) last); }
+  }
+}
+.aside {
+  @extend %common;
+  @include span(4 of 12 last);
+}
+.gallery {
+  clear: both;
+}
+@include breakpoint('min' em(640px) ) {
+  .gallery {
+    @include gallery(3);
+  }
+}
+@include breakpoint('min' em(980px) ) {
+  .gallery {
+    @include gallery(4 keep);
+  }
+}
