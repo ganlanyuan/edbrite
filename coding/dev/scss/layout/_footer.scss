@@ -1,2 +1,18 @@
 // footer
 // ==========
+
+.site-foot {
+  padding: 20px 0;
+  background-color: #383838;
+  ul {
+    @extend %clearfix;
+  }
+  li {
+    font-size: 12px;
+    &:first-child { float: left; }
+    &:last-child { float: right; 
+      > a { text-decoration: underline; }
+    }
+  }
+  a { color: #fff; }
+}

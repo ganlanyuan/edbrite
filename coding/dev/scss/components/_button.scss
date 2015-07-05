@@ -1,2 +1,15 @@
 // button
 // ============
+
+[class^='button-'] {
+  @include button(14px '0.5em 1.2em' radius hover #ccc);
+  font-weight: bold;
+  border-width: 0;
+}
+
+@each $button in 'danger', 'warning' {
+  .button-#{$button} { 
+    @include button(map-get($alerts, $button) hover); 
+    box-shadow: 0 3px 0 darken(map-get($alerts, $button), 20%);
+  }
+}

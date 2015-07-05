@@ -1,3 +1,42 @@
 // form
 // ============
 
+input,
+textarea {
+  @include button('0.5em 0.8em' radius);
+  border: 1px solid #ccc;
+}
+@include breakpoint('min' 640) {
+  .grid-2 {
+    @include span(1 of 2);
+    &:last-child { margin-right: 0; }
+  }
+}
+
+form {
+  font-size: 14px;
+  li {
+    @extend %clearfix;
+    margin-bottom: 1em;
+  }
+  label {
+    display: block;
+    margin-bottom: 0.2em;
+  }
+  a {
+    color: map-get($color, brand);
+    &:hover { text-decoration: underline; }
+  }
+}
+
+.submit-line {
+  text-align: right;
+  > label { 
+    display: inline-block; 
+    margin-right: em(3, 14);
+  }
+}
+.full { 
+  width: 100%; 
+  box-sizing: border-box;
+}

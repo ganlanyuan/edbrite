@@ -1,0 +1,12 @@
+// banner
+// ============
+
+@each $item in 'success', 'info', 'danger', 'warning' {
+  .banner-#{$item} {
+    background-color: map-get($alerts, $item);
+  }
+}
+[class^='banner-'] {
+  padding: em(40) 0;
+  margin-bottom: em(20);
+}
