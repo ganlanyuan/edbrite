@@ -1,9 +1,17 @@
 // typography
 // ===============
 
-// .heading1 { @include type(47px 600 l.2); }
-// .heading2 { @include type(47px 600 l.2); }
-// .heading3 { @include type(20px 700 uppercase); }
-// .heading4 { @include type(15px 700 uppercase); }
-// .heading5 { @include type(15px 700); }
-// .heading6 { @include type(47px 600 l.2); }
+// .h1 { @include type(47px 600 l.2); }
+.h2 { @include type(41px 1.2 center); }
+// .h3 { @include type(20px 700 uppercase); }
+// .h4 { @include type(15px 700 uppercase); }
+// .h5 { @include type(15px 700); }
+// .h6 { @include type(47px 600 l.2); }
+
+p {
+  @include type(1.5);
+  margin: 1.5em 0;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

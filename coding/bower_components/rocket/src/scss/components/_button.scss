@@ -20,10 +20,13 @@
 		'0.5em 0.8em'
     radius
 ){
+  $padding: false;
   $check: ('radius' 'round' 'hover');
 
   $font-size: ro-get-type($key, 'number');
-  $padding: unquote(ro-get-type($key, 'string', $check));
+  @if ro-get-type($key, 'string', $check) {
+    $padding: unquote(ro-get-type($key, 'string', $check));
+  }
   $background-color: ro-get-type($key, 'color'); 
   $radius: ro-get($key, 'radius');
   $round: ro-get($key, 'round');

@@ -6,7 +6,6 @@
 *.swp
 
 /.codekit-cache/
-/design/
 /bower_components/
 /node_modules/
 

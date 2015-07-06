@@ -1,10 +1,40 @@
 // header
 // ==========
 
-.container { @include container(1024px); }
+body { padding-top: 61px; }
+.container { @include container(1200px); }
 .site-head {
-  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  transition: background 0.3s ease 0s;
+  &.scrolled {
+    background-color: rgba(255, 255, 255, 0.9);
+    .lt-ie9 & { @include ie-rgba(rgba(255, 255, 255, 0.9)); }
+  }
 }
-@include breakpoint(min 768) {
-  .logo { @include span(3 of 12); }
+.nav-icon {
+  @extend %global-transition;
+  @include button(23px '9px 10px');
+  @include hidden(map-get($bp, site-head)); 
+  float: right;
+  margin-top: 10px;
+  border-radius: 3px;
+  &:hover {
+    color: #fff;
+    background-color: map-get($alerts, warning);
+  }
+  i:before { float: left; }
+}
+.logo {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  &, svg { float: left; }
+  .no-inlinesvg & {
+    width: 129px;
+    height: 41px;
+    background: url('../img/logo.png') 0 50% no-repeat;
+    svg { display: none; }
+  }
 }

@@ -6,7 +6,68 @@
     background-color: map-get($alerts, $item);
   }
 }
-[class^='banner-'] {
-  padding: em(40) 0;
+
+.banner {
+  padding: em(30) 0;
   margin-bottom: em(20);
+  color: #fff;
+  @include breakpoint(min 1024) {
+    padding: em(50) 0;
+  }
+  @include breakpoint(min 1200) {
+    padding: em(70) 0;
+  }
+  &-home {
+    @extend %clearfix;
+    svg { height: auto; }
+    .title {
+      @extend %global-transition;
+      font-size: 26px;
+      margin-bottom: 1.2em;
+    }
+    p {
+      @extend %global-transition;
+      font-size: 15px;
+    }
+    @include breakpoint(853 1024 1050) {
+      .title { margin-top: 4%; }
+    }
+    @include breakpoint(560 768 1024 1199) {
+      .title { font-size: 32px; }
+      p { font-size: 18px; }
+    }
+    @include breakpoint(min 1200) {
+      .title { font-size: 40px; }
+      p { font-size: 20px; }
+    }
+  }
+  &-section {
+    text-align: center;
+    .h2 { text-transform: uppercase; }
+    p {
+      font-size: 29px;
+    }
+  }
+  @include breakpoint(max 799) {
+    &-home {
+      figure {
+        margin-bottom: 30px;
+      }
+      svg { 
+        width: 70%; 
+        display: block;
+        margin: 0 auto;
+      }
+    }
+    &-content { text-align: center; }
+  }
+  @include breakpoint(min 800) {
+    &-home { 
+      figure { @include span(45 of 100 right); } 
+      svg { 
+        width: 100%; 
+      }
+    }
+    &-content { @include span(55 of 100 right last); }
+  }
 }

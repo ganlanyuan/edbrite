@@ -9,6 +9,11 @@ $global-gutter: 30px;
 $z-index: (
 );
 
+// breakpoints
+$bp: (
+  'site-head': 560,
+);
+
 // font
 $helvetica: "'Helvetica Neue', Helvetica, Arial, sans-serif";
 $arial: "Arial, Helvetica, sans-serif";

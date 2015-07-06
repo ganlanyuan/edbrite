@@ -2,19 +2,59 @@
 // ============
 
 .site-nav { 
+  overflow: hidden;
+  transition: height 0.3s ease 0s;
   li {
-    font-size: 14px;
-    &:last-child > a { padding-right: 0; }
+    @include breakpoint(max 767) {
+     font-size: 15px; 
+    }
+    &:last-child > a { 
+      padding-right: 0; 
+      &:hover {
+        color: #333;
+        background-color: transparent;
+      }
+    }
   }
   a {
+    @extend %global-transition;
     display: block;
-    padding: em(3, 14) em(10, 14);
   }
-  @include breakpoint(min 768) {
-    @include span(9 of 12 last); 
-    text-align: right;
-    li {
-      display: inline-block;
+  .current > a,
+  a:hover {
+    color: #fff;
+    background-color: map-get($alerts, warning);
+  }
+  .btn { line-height: normal; }
+  @include breakpoint(max (map-get($bp, site-head) - 1)) {
+    clear: both;
+    margin: 0 -2%;
+    height: 0;
+    background-color: #f2f2f2;
+    box-shadow: 0 13px 13px 0 rgba(0, 0, 0, 0.15);
+    #site-nav-toggle:checked ~ & { height: 235px; }
+    a {
+      padding: 12px 2%;
     }
+  }
+  @include breakpoint(min map-get($bp, site-head)) {
+    > ul {
+      float: right;
+    }
+    li {
+      float: left;
+    }
+    a {
+      padding: 10px 15px;
+      height: 41px;
+      line-height: 41px;
+    }
+  }
+  @include breakpoint(min 1100) {
+   li { font-size: 18px; }
+   a { 
+    padding-left: 20px; 
+    padding-right: 20px;
+   }
   }
 }

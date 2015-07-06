@@ -4,21 +4,26 @@
 <?php include 'part/helper/browsehappy.php'; ?>
 <?php include 'part/header.php'; ?>
 
-<div class="banner-info">
+<div class="banner banner-info banner-home">
   <div class="container">
+    <figure>
+      <svg role="img" title="arrow" width="639" height="556"><use xlink:href="#intro"></use></svg>
+    </figure>
     <div class="banner-content">
-      <h2>Try <em>Edbrite</em>: Integrated LMS and SIS</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur perferendis mollitia, vero labore asperiores libero saepe architecto quis qui illo.</p>
-      <p>Dolorum, repellat, ex praesentium dolorem cupiditate minus minima obcaecati ducimus? Ipsam, recusandae harum numquam! Nisi quia, fugiat aut! Reiciendis, repellendus?</p>
-      <div>
-        <a href="" class="button-danger">Free Signup</a><a href="features.php" class="button-warning">Features</a>
+      <h2 class="title">Try <em>Edbrite</em>: Integrated LMS and SIS</h2>
+      <p>EdBrite is an innovative E-Learning and Student Database platform designed institutions, education programs, and organizations with less than 500 students. </p>
+      <p>It’s intutive design and affordable price point makes it easy for institutions to accelerate into education technology.</p>
+      <div class="btn-group">
+        <a href="" class="btn btn-danger">Free Signup</a><a href="features.php" class="btn btn-warning">Features</a>
       </div>
     </div>
   </div>
 </div>
 
 <div class="container">
-  <form action="" class="form-signup">
+  <h2 class="h2">Ready to get started?</h2>
+  <div class="tips">Sign up for a no obligation, free 3-month account.</div>
+  <form action="" class="form-signup-3m">
     <ol>
       <li>
         <div class="grid-2 required">
@@ -32,11 +37,11 @@
       </li>
       <li class="required">
         <label for="organization-name">Institution / Organization Name</label>
-        <input type="text" id="organization-name" required>
+        <input type="text" id="organization-name" class="full" required>
       </li>
       <li class="required">
         <label for="job-title">Job Title</label>
-        <input type="text" id="job-title" required>
+        <input type="text" id="job-title" class="full" required>
       </li>
       <li>
         <div class="grid-2 required">
@@ -54,7 +59,7 @@
       </li>
       <li class="submit-line">
         <label for="terms"><input id="terms" type="checkbox" checked> Agree to <a href="terms.php">Terms and Conditions</a></label>
-        <input type="submit" value="Submit" class="button-danger">
+        <input type="submit" value="Submit" class="btn btn-danger">
       </li>
     </ol>
   </form>

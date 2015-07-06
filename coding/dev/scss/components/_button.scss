@@ -1,15 +1,23 @@
 // button
 // ============
 
-[class^='button-'] {
-  @include button(14px '0.5em 1.2em' radius hover #ccc);
+
+.btn {
+  @include button(14px '10px 16px 13px' radius hover #ccc);
+  border-radius: em(6, 14);
   font-weight: bold;
   border-width: 0;
-}
-
-@each $button in 'danger', 'warning' {
-  .button-#{$button} { 
-    @include button(map-get($alerts, $button) hover); 
-    box-shadow: 0 3px 0 darken(map-get($alerts, $button), 20%);
+  box-shadow: 0 -3px 0 0 rgba(0, 0, 0, 0.4) inset;
+  color: #fff !important;
+  &-group & {
+    margin-right: 5px;
+  }
+  // &-lg {
+  //   padding: 15px 15px 18px;
+  // }
+  @each $button in 'danger', 'warning' {
+    &-#{$button} { 
+      @include button(map-get($alerts, $button) hover); 
+    }
   }
 }

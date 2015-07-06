@@ -1,6 +1,17 @@
 // codekit-prepend "../../bower_components/REM-unit-polyfill/js/rem.js"
-// codekit-prepend "../../bower_components/svg4everybody/svg4everybody.ie8.min.js"
+// codekit-prepend "../../bower_components/responsive-img.js/responsive-img.js"
 // @codekit-prepend "lib/Modernizr.js"
-// @codekit-prepend "../../bower_components/responsive-img.js/responsive-img.js"
+// @codekit-prepend "lib/svg4everybody.ie8.js"
 // @codekit-prepend "../../bower_components/rocket/src/js/kit.js"
 
+ready(function () {
+  window.onscroll = function () {
+    var ws = k.win.ST(),
+        top = k('.banner-home figure').getTop() - 61; // site-head: 61
+    if (ws > top) {
+      k('.site-head').addClass('scrolled');
+    } else {
+      k('.site-head').removeClass('scrolled');
+    }
+  }
+})
