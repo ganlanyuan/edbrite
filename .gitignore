@@ -4,6 +4,7 @@
 *.sublime-workspace
 *.scssc
 *.swp
+*.psd
 
 /.codekit-cache/
 /bower_components/
