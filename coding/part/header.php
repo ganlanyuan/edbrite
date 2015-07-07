@@ -13,7 +13,7 @@
         <li <?php if ($pagename == 'features') { echo 'class="current"'; } ?> ><a href="features.php">Features</a></li>
         <li <?php if ($pagename == 'tour') { echo 'class="current"'; } ?> ><a href="tour.php">Tour</a></li>
         <li <?php if ($pagename == 'pricing') { echo 'class="current"'; } ?> ><a href="pricing.php">Pricing</a></li>
-        <li <?php if ($pagename == 'signup') { echo 'class="current"'; } ?> ><a href="signup.php"><span class="btn btn-danger">Free Signup</span></a></li>
+        <li><a href="signup.php"><span class="btn btn-danger">Free Signup</span></a></li>
       </ul>
     </nav>
   </div>

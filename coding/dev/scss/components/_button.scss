@@ -15,7 +15,7 @@
   // &-lg {
   //   padding: 15px 15px 18px;
   // }
-  @each $button in 'danger', 'warning' {
+  @each $button in 'danger', 'warning', 'info' {
     &-#{$button} { 
       @include button(map-get($alerts, $button) hover); 
     }

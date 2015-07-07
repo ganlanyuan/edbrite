@@ -7,7 +7,7 @@
 ready(function () {
   window.onscroll = function () {
     var ws = k.win.ST(),
-        top = k('.banner-home figure').getTop() - 61; // site-head: 61
+        top = k('.banner').getTop();
     if (ws > top) {
       k('.site-head').addClass('scrolled');
     } else {

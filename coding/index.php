@@ -7,7 +7,7 @@
 <div class="banner banner-info banner-home">
   <div class="container">
     <figure>
-      <svg role="img" title="arrow" width="639" height="556"><use xlink:href="#intro"></use></svg>
+      <svg role="img" title="intro" width="639" height="556"><use xlink:href="#intro"></use></svg>
     </figure>
     <div class="banner-content">
       <h2 class="title">Try <em>Edbrite</em>: Integrated LMS and SIS</h2>
