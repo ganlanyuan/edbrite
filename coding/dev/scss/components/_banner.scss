@@ -9,7 +9,7 @@
 
 .banner {
   padding: em(30) 0;
-  margin-bottom: em(20);
+  margin-bottom: em(30);
   color: #fff;
   @include breakpoint(min 1024) {
     padding: em(50) 0;
@@ -17,6 +17,7 @@
   @include breakpoint(min 1200) {
     padding: em(70) 0;
   }
+  p { color: #fff; }
   &-home {
     @extend %clearfix;
     svg { height: auto; }

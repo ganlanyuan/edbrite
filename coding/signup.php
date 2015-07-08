@@ -13,10 +13,12 @@
 
 <div class="container">
   <figure class="avatar">
-    <svg role="img" title="woman" width="260" height="387"><use xlink:href="#woman"></use></svg>
+    <div class="avatar-wrapper">
+      <svg role="img" title="woman" width="260" height="387"><use xlink:href="#woman"></use></svg>
+    </div>
     <figcaption>We're excited that you wanted to get started with Edbrite. Our support team is ready to answer any questions you may have about the system.</figcaption>
   </figure>
-  <form action="" class="form-signup-3m">
+  <form action="" class="form-signup-3m contact-form">
     <ol>
       <li>
         <div class="grid-2 required">

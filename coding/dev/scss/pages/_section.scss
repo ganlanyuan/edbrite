@@ -1,2 +1,47 @@
 // section
 // =============
+
+.gallery-features {
+  text-align: center;
+  svg, img {
+    max-width: 64%;
+    height: auto;
+  }
+  li {
+    padding-bottom: em(20);
+  }
+  @include breakpoint(min 600) {
+    @include gallery(2 bottom);
+  }
+  @include breakpoint(min 920) {
+    @include gallery(3 bottom);
+  }
+  @include breakpoint(min 1120) {
+    @include gallery(4 bottom);
+  }
+  &-wrapper {
+    border-bottom: 1px solid map-get($color, border);
+    margin-bottom: em(30);
+  }
+}
+.feature-list {
+  max-width: 39em;
+  margin: em(30) auto em(50);
+  > li {
+    display: inline-block;
+    width: 16em;
+    padding-left: em(50);
+    line-height: 2;
+    background: url('../img/check.png') left center no-repeat;
+  }
+  p { margin: 15px 0; }
+  @include breakpoint(max 39em) {
+    text-align: center;
+    > li { text-align: left; }
+  }
+}
+
+.center-btns {
+  text-align: center;
+  margin: em(50) 0;
+}

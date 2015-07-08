@@ -1,2 +1,29 @@
 // contact
 // =============
+
+.avatar {
+  margin-bottom: em(30);
+  svg { 
+    max-width: 80%; 
+    height: auto;
+  }
+  figcaption {
+    @include type(14px center);
+    color: #666;
+  }
+  &-wrapper {
+    padding: 10px 0;
+    margin-bottom: 10px;
+    background-color: #ebeff2;
+    text-align: center;
+  }
+}
+
+@include breakpoint(min 700) {
+  .avatar {
+    @include span(1 of 3 4%);
+  }
+  .contact-form {
+    @include span(2 of 3 4% last);
+  }
+}

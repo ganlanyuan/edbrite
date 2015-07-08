@@ -7,7 +7,7 @@
 <div class="banner banner-success banner-section">
   <div class="container">
     <h2 class="h2">Features</h2>
-    <p>They proudly bring you the 1st ever Future of Web Design, San Francisco the event They proudly bring you the 1st ever Future of Web Design, San Francisco the event They proudly bring you the 1st ever Future of Web Design, San Francisco the event</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam rerum aliquam aperiam pariatur quisquam nulla adipisci dolorem architecto quia obcaecati.</p>
   </div>
 </div>
 
@@ -52,29 +52,29 @@
 <div class="container">
   <section>
     <h2 class="h2">Online Classroom</h2>
-    <ul>
-      <li>Lorem ipsum</li>
-      <li>Repudiandae, doloremque</li>
-      <li>Eligendi, quasi</li>
-      <li>Debitis, sequi</li>
-      <li>Neque, quasi</li>
-      <li>In, officia</li>
-      <li>Sapiente, tempora</li>
+    <ul class="feature-list">
+      <li><p>Lorem ipsum</p></li>
+      <li><p>Repudiandae, doloremque</p></li>
+      <li><p>Eligendi, quasi</p></li>
+      <li><p>Debitis, sequi</p></li>
+      <li><p>Neque, quasi</p></li>
+      <li><p>In, officia</p></li>
+      <li><p>Sapiente, tempora</p></li>
     </ul>
   </section>
   <section>
     <h2 class="h2">Administration</h2>
-    <ul>
-      <li>Esse, praesentium</li>
-      <li>Est, asperiores</li>
-      <li>Dolore, id</li>
-      <li>Iure, ipsum</li>
-      <li>Dolor, laudantium</li>
-      <li>Qui, quia</li>
+    <ul class="feature-list">
+      <li><p>Esse, praesentium</p></li>
+      <li><p>Est, asperiores</p></li>
+      <li><p>Dolore, id</p></li>
+      <li><p>Iure, ipsum</p></li>
+      <li><p>Dolor, laudantium</p></li>
+      <li><p>Qui, quia</p></li>
     </ul>
   </section>
   <section>
-    <div class="btn-group feature-btns">
+    <div class="btn-group center-btns">
       <a href="signup.php" class="btn btn-danger">Free Signup</a>
       <a href="tour.php" class="btn btn-warning">Take a Tour</a>
     </div>

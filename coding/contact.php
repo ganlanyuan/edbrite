@@ -13,10 +13,12 @@
 
 <div class="container">
   <figure class="avatar">
-    <svg role="img" title="man" width="260" height="387"><use xlink:href="#man"></use></svg>
+    <div class="avatar-wrapper">
+      <svg role="img" title="man" width="260" height="387"><use xlink:href="#man"></use></svg>
+    </div>
     <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, minus!</figcaption>
   </figure>
-  <form action="" class="form-signup-3m">
+  <form action="" class="form-signup-3m contact-form">
     <ol>
       <li>
         <div class="grid-2 required">
