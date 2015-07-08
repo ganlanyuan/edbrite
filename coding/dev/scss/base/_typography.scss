@@ -2,7 +2,10 @@
 // ===============
 
 // .h1 { @include type(47px 600 l.2); }
-.h2 { @include type(41px 1.2 center); }
+.h2 { 
+  @extend %global-transition;
+  @include type(25px 1.2 center); 
+}
 // .h3 { @include type(20px 700 uppercase); }
 // .h4 { @include type(15px 700 uppercase); }
 // .h5 { @include type(15px 700); }
@@ -14,4 +17,19 @@ p {
   &:last-child {
     margin-bottom: 0;
   }
+}
+.tips {
+  @extend %global-transition;
+  @include type(12px);
+  margin-top: 0.3em;
+  text-align: center;
+  color: map-get($alerts, danger);
+}
+@include breakpoint(min 640) {
+  .h2 { @include type(32px); }
+  .tips { @include type(14px); }
+}
+@include breakpoint(min 1100) {
+  .h2 { @include type(41px); }
+  .tips { @include type(16px); }
 }
