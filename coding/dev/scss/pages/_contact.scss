@@ -21,9 +21,9 @@
 
 @include breakpoint(min 700) {
   .avatar {
-    @include span(1 of 3 4%);
+    @include span(2 of 7 4%);
   }
   .contact-form {
-    @include span(2 of 3 4% last);
+    @include span(5 of 7 4% last);
   }
 }

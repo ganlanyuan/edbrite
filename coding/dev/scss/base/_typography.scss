@@ -6,7 +6,10 @@
   @extend %global-transition;
   @include type(25px 1.2 center); 
 }
-// .h3 { @include type(20px 700 uppercase); }
+.h3 { 
+  @include type(23px weight-normal); 
+  color: #666;
+}
 // .h4 { @include type(15px 700 uppercase); }
 // .h5 { @include type(15px 700); }
 // .h6 { @include type(47px 600 l.2); }
@@ -22,16 +25,15 @@ p {
 .tips {
   @extend %global-transition;
   @include type(12px);
-  margin-top: 0.3em;
-  text-align: center;
-  color: map-get($alerts, danger);
 }
 @include breakpoint(min 640) {
   .h2 { @include type(32px); }
+  .h3 { @include type(27px); }
   .tips { @include type(14px); }
 }
 @include breakpoint(min 1100) {
   .h2 { @include type(41px); }
+  .h3 { @include type(36px); }
   .tips { @include type(16px); }
   p { @include type(18px); }
 }

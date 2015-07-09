@@ -1,6 +1,7 @@
 // section
 // =============
 
+// features
 .gallery-features {
   text-align: center;
   svg, img {
@@ -40,8 +41,63 @@
     > li { text-align: left; }
   }
 }
-
 .center-btns {
   text-align: center;
   margin: em(50) 0;
+}
+
+// pricing
+.modules {
+  color: #666;
+  &-tips {
+    max-width: 50em;
+    margin: 0 auto;
+    > span { color: map-get($alerts, danger); }
+  }
+  &-wrapper {
+    padding-bottom: em(50);
+    margin-bottom: em(40);
+    border-bottom: 1px solid map-get($color, border);
+  }
+  .h2 {
+    font-weight: normal;
+    line-height: 1.7;
+    > strong { font-weight: bold; }
+  }
+}
+.gallery-modules {
+  text-align: center;
+  li {
+    display: inline-block;
+    padding: 1.8em 2.6em;
+    margin: em(20) em(10);
+    font-size: 18px;
+    line-height: 1.5;
+    border: 1px solid map-get($color, border);
+    &:after {
+      content: ' *';
+      color: map-get($alerts, danger);
+    }
+    @include breakpoint(min 740) {
+      font-size: 22px;
+    }
+    @include breakpoint(min 1060) {
+      font-size: 25px;
+    }
+  }
+}
+.panel {
+  padding-bottom: em(50);
+  text-align: center;
+  overflow: hidden;
+  &:not(.last) {
+    margin-bottom: em(50);
+    border-bottom: 1px solid map-get($color, border);
+  }
+  .h2 {
+    margin-bottom: 40px;
+  }
+  img:last-child {
+    margin-bottom: em(-55);
+  }
 }

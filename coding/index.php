@@ -22,7 +22,7 @@
 
 <div class="container">
   <h2 class="h2">Ready to get started?</h2>
-  <div class="tips">Sign up for a no obligation, free 3-month account.</div>
+  <div class="tips home-tips">Sign up for a no obligation, free 3-month account.</div>
   <form action="" class="form-signup-3m form-home">
     <ol>
       <li>

@@ -19,7 +19,7 @@
         <li>Monthly Subscription <br />$1 per active user</li>
         <li>Annual Subscription <br />$10 per active user</li>
       </ul>
-      <div class="modules-tips">*Active users is number student and instructors using the system, does not include past graduates or otherwise inactive users stored in the database. Pricing dased on increments of 25. For example, 25 users is $25 per month or $250 per year. 100 users is $100 per month or $1,000 per year.</div>
+      <div class="tips modules-tips"><span>*</span> Active users is number student and instructors using the system, does not include past graduates or otherwise inactive users stored in the database. Pricing dased on increments of 25. For example, 25 users is $25 per month or $250 per year. 100 users is $100 per month or $1,000 per year.</div>
     </div>
   </div>
 </div>
@@ -29,7 +29,7 @@
     <a href="" class="btn btn-info">Contact Us</a>
   </div>
 </div>
-<div class="panel">
+<div class="panel last">
   <div class="container">
     <h2 class="h2">Ready to get start?</h2>
     <a href="" class="btn btn-danger">Free Signup</a>
