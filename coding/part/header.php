@@ -3,9 +3,7 @@
     <input type="checkbox" id="site-nav-toggle" class="hidden-checkbox">
     <label class="nav-icon" for="site-nav-toggle"><i class="abc-nav"></i></label>
     <h1 class="logo"><a href="">
-      <!--[if (!IE 8)&(!IE 7)]><!-->
-      <?php include 'assets/svgs/logo.svg'; ?>
-      <!--<![endif]-->
+      <svg role="img" title="EdBrite" width="161" height="51"><use xlink:href="#logo"></use></svg>
     </a></h1>
     <nav class="site-nav">
       <ul>

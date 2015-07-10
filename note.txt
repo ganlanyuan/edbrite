@@ -1,8 +1,0 @@
-http://www.getalma.com/
-
-// 1. Sticky header. first section takes up whole screen on my laptop
-2. make all subpages have white background color like “home.psd”
-3. use vector images
-// 4. footer: make text together, rm triangle
-// 5. Favicon: use graduation hat
-6. Free Signup page

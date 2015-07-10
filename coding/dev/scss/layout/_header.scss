@@ -30,13 +30,7 @@ body { padding-top: 61px; }
   i:before { float: left; }
 }
 .logo {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  &, svg { float: left; }
-  .no-inlinesvg & {
-    width: 129px;
-    height: 41px;
-    background: url('../img/logo.png') 0 50% no-repeat;
-    svg { display: none; }
-  }
+  padding-top: 15px;
+  padding-bottom: 15px;
+  &, svg, img { float: left; }
 }

@@ -1,9 +1,8 @@
 // button
 // ============
 
-
 .btn {
-  @include button(14px '10px 16px 13px' radius hover #ccc);
+  @include button('13px 16px 16px' radius hover #ccc);
   border-radius: em(6, 14);
   font-weight: bold;
   border-width: 0;
