@@ -20,7 +20,6 @@
   p { color: #fff; }
   &-home {
     @extend %clearfix;
-    svg { height: auto; }
     .title {
       @extend %global-transition;
       font-size: 26px;
