@@ -12,7 +12,7 @@ $z-index: (
 
 // breakpoints
 $bp: (
-  'site-head': 600,
+  'site-head': 700,
 );
 
 // font
@@ -50,6 +50,12 @@ $alerts:(
   'danger': #e54d40,
 );
 
+$features: (
+  'arrow': #d04b69,
+  'ecology': #b9cd4b,
+  'education': #90b8d8,
+  'ecology-2': #f5be5d,
+);
 // transition
 $global-bezier: cubic-bezier(0.645, 0.045, 0.355, 1);
 

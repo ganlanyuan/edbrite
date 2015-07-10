@@ -2,14 +2,16 @@
 // ============
 
 .btn {
-  @include button('13px 16px 16px' radius hover #ccc);
+  @include button('13px 10px 16px' radius hover #ccc);
+  min-width: 5em;
   border-radius: em(6, 14);
   font-weight: bold;
+  color: #fff !important;
+  text-align: center;
   border-width: 0;
   box-shadow: 0 -3px 0 0 rgba(0, 0, 0, 0.4) inset;
-  color: #fff !important;
   &-group & {
-    margin-right: 5px;
+    margin-right: 0.8em;
   }
   // &-lg {
   //   padding: 15px 15px 18px;

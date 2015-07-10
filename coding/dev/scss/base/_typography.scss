@@ -10,7 +10,7 @@
   @include type(23px weight-normal); 
   color: #666;
 }
-// .h4 { @include type(15px 700 uppercase); }
+.h4 { @include type(17px uppercase); }
 // .h5 { @include type(15px 700); }
 // .h6 { @include type(47px 600 l.2); }
 
