@@ -13,9 +13,7 @@
 
 <div class="container">
   <figure class="avatar">
-    <div class="avatar-wrapper">
-      <svg role="img" title="man" width="260" height="387"><use xlink:href="#man"></use></svg>
-    </div>
+    <div class="avatar-wrapper"><img src="assets/svgs/man.png" alt="" width="260" height="387"></div>
     <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, minus!</figcaption>
   </figure>
   <form action="" class="form-signup-3m contact-form">

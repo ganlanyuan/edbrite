@@ -6,9 +6,7 @@
 
 <div class="banner banner-info banner-home">
   <div class="container">
-    <figure>
-      <svg role="img" title="intro" width="639" height="556"><use xlink:href="#intro"></use></svg>
-    </figure>
+    <figure><img src="assets/svgs/intro.png" width="639" height="556" alt=""></figure>
     <div class="banner-content">
       <h2 class="title">Try <em>Edbrite</em>: Integrated LMS and SIS</h2>
       <p>EdBrite is an innovative E-Learning and Student Database platform designed institutions, education programs, and organizations with less than 500 students. </p>

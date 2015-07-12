@@ -17,8 +17,8 @@
     }
   }
   a {
-    @extend %global-transition;
     display: block;
+    transition: color 0.3s $global-bezier 0s, background-color 0.3s $global-bezier 0s;
     &:hover {
       color: #fff;
       background-color: map-get($alerts, warning);

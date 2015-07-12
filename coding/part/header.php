@@ -2,9 +2,7 @@
   <div class="container">
     <input type="checkbox" id="site-nav-toggle" class="hidden-checkbox">
     <label class="nav-icon" for="site-nav-toggle"><i class="abc-nav"></i></label>
-    <h1 class="logo"><a href="">
-      <svg role="img" title="EdBrite" width="161" height="51"><use xlink:href="#logo"></use></svg>
-    </a></h1>
+    <h1 class="logo"><a href=""><img src="assets/svgs/logo.png" alt="" width="161" height="51"></a></h1>
     <nav class="site-nav">
       <ul>
         <li <?php if ($pagename == 'index') { echo 'class="current"'; } ?> ><a href="index.php">Home</a></li>

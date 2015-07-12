@@ -3,8 +3,8 @@
 
 .avatar {
   margin-bottom: em(30);
-  svg { 
-    max-width: 80%; 
+  img { 
+    max-width: 70%; 
     height: auto;
   }
   figcaption {
@@ -18,11 +18,16 @@
   }
 }
 
+@include breakpoint(max 699) {
+  .avatar {
+    display: none;
+  }
+}
 @include breakpoint(min 700) {
   .avatar {
     @include span(2 of 7 4%);
   }
   .contact-form {
-    @include span(5 of 7 4% last);
+    @include span(4.5 of 7 4% last);
   }
 }

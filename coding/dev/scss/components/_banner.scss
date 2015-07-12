@@ -12,18 +12,19 @@
   margin-bottom: em(30);
   color: #fff;
   @include breakpoint(min 1024) {
-    padding: em(50) 0;
+    padding: em(40) 0;
   }
   @include breakpoint(min 1200) {
-    padding: em(70) 0;
+    padding: em(50) 0;
   }
   p { color: #fff; }
   &-home {
     @extend %clearfix;
+    img { max-width: 90%; }
     .title {
       @extend %global-transition;
       font-size: 26px;
-      margin-bottom: 1.2em;
+      margin-bottom: 0.8em;
     }
     p {
       @extend %global-transition;
@@ -86,23 +87,24 @@
   }
   @include breakpoint(max 799) {
     &-home {
-      figure {
-        margin-bottom: 30px;
+      figure { 
+        margin: 0 auto 20px;
+        text-align: center;
       }
-      svg { 
-        width: 70%; 
-        display: block;
-        margin: 0 auto;
+      img { 
+        width: 65%; 
+        max-width: 430px;
+        .lt-ie9 & { max-width: 100% !important; }
       }
     }
     &-content { text-align: center; }
   }
   @include breakpoint(min 800) {
     &-home { 
-      figure { @include span(45 of 100 right); } 
-      svg { 
-        width: 100%; 
-      }
+      figure { 
+        @include span(45 of 100 right); 
+        text-align: right;
+      } 
     }
     &-content { @include span(55 of 100 right last); }
   }

@@ -19,6 +19,7 @@
 	<meta name="MobileOptimized" content="320">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
 	<!-- favicons -->
 	<link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-touch-icon-57x57.png">
@@ -65,5 +66,4 @@
 
 	<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
 	<script src="assets/js/script.js"></script>
-  <?php include_once("svg-ajax.php") ?>
 </head>

@@ -13,9 +13,7 @@
 
 <div class="container">
   <figure class="avatar">
-    <div class="avatar-wrapper">
-      <svg role="img" title="woman" width="260" height="387"><use xlink:href="#woman"></use></svg>
-    </div>
+    <div class="avatar-wrapper"><img src="assets/svgs/woman.png" alt="" width="260" height="387"></div>
     <figcaption>We're excited that you wanted to get started with Edbrite. Our support team is ready to answer any questions you may have about the system.</figcaption>
   </figure>
   <form action="" class="form-signup-3m contact-form">

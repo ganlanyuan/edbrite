@@ -15,38 +15,22 @@
   <div class="container">
     <ul class="gallery-features">
       <li>
-        <figure>
-          <svg role="img" width="230" height="230" title="arrow">
-            <use xlink:href="#arrow"></use>
-          </svg>
-        </figure>
+        <figure><img src="assets/svgs/arrow.png" alt="" width="230" height="230"></figure>
         <h4 class="h4"><span class="arrow">arrow</span></h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis reprehenderit facere temporibus, nulla id unde nobis quasi est sed porro.</p>
       </li>
       <li>
-        <figure>
-          <svg role="img" width="230" height="230" title="ecology">
-            <use xlink:href="#ecology"></use>
-          </svg>
-        </figure>
+        <figure><img src="assets/svgs/ecology.png" alt="" width="230" height="230"></figure>
         <h4 class="h4"><span class="ecology">ecology</span></h4>
         <p>Eaque porro esse doloremque, dolorem repudiandae quod sapiente architecto odio libero natus voluptatum voluptate. Libero repudiandae vel molestiae rerum, error.</p>
       </li>
       <li>
-        <figure>
-          <svg role="img" width="230" height="230" title="education">
-            <use xlink:href="#education"></use>
-          </svg>
-        </figure>
+        <figure><img src="assets/svgs/education.png" alt="" width="230" height="230"></figure>
         <h4 class="h4"><span class="education">education</span></h4>
         <p>Ipsam nihil amet similique sed hic labore molestiae accusamus? Non quos nesciunt sed alias deleniti corrupti maiores iusto voluptatibus ipsum.</p>
       </li>
       <li>
-        <figure>
-          <svg role="img" width="230" height="230" title="ecology-2">
-            <use xlink:href="#ecology-2"></use>
-          </svg>
-        </figure>
+        <figure><img src="assets/svgs/ecology-2.png" alt="" width="230" height="230"></figure>
         <h4 class="h4"><span class="ecology-2">ecology-2</span></h4>
         <p>Cumque dolore atque eveniet nemo iure eaque id quibusdam quis nostrum! Sint architecto eveniet sapiente animi assumenda consequatur rerum alias.</p>
       </li>

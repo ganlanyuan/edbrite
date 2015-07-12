@@ -18,7 +18,7 @@ body { padding-top: 81px; }
 }
 .nav-icon {
   @extend %global-transition;
-  @include button(23px '9px 10px');
+  @include button(27px '11px 12px');
   @include hidden(map-get($bp, site-head)); 
   float: right;
   margin-top: 10px;
@@ -32,5 +32,13 @@ body { padding-top: 81px; }
 .logo {
   padding-top: 15px;
   padding-bottom: 15px;
-  &, svg, img { float: left; }
+  &, img { float: left; }
+}
+
+@include breakpoint(max (map-get($bp, site-head) - 1)) {
+  body { padding-top: 71px; }
+  .logo {
+    width: 129px;
+    height: 41px;
+  }
 }
