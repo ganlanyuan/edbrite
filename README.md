@@ -1,2 +1,2 @@
-# edbrite
-edbrite
+# education
+education
