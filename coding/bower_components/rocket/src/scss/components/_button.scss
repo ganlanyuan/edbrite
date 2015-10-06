@@ -15,9 +15,9 @@
 /// @link https://github.com/ganlanyuan/rocket full document
 
 @mixin button (
-	$key:
-		14px
-		'0.5em 0.8em'
+  $key:
+    14px
+    '0.5em 0.8em'
     radius
 ){
   $padding: false;
@@ -33,28 +33,28 @@
   $hover: ro-get($key, 'hover');
 
   // *** output *** //
-	@extend %button-style;
+  @extend %button-style;
   @if $radius {
     border-radius: $ro-button-radius;
   }
   @if $round {
     border-radius: $ro-button-round;
   }
-	@if $font-size {
-		font-size: $font-size;
-		font-size: rem($font-size);
-	}
-	@if $padding {
-		padding: $padding;
-	}
-	@if $background-color {
-		background-color: $background-color;
-		color: contrast($background-color);
+  @if $font-size {
+    font-size: $font-size;
+    font-size: rem($font-size);
+  }
+  @if $padding {
+    padding: $padding;
+  }
+  @if $background-color {
+    background-color: $background-color;
+    color: contrast($background-color);
     @if $hover {
       &:hover {
         background-color: analogous($background-color $ro-button-hover-lightness);
         color: contrast(analogous($background-color $ro-button-hover-lightness));
       }
     }
-	}
+  }
 }

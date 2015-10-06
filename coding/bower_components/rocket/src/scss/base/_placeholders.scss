@@ -6,33 +6,13 @@
 
 %ro-hidden-checkbox {
   position: absolute; 
-  left: -9999em;
+  left: -9999px;
 }
 
 // transition
 %ro-global-transition {
   -webkit-transition: all $ro-global-animation-duration $ro-global-bezier 0s;
   transition: all $ro-global-animation-duration $ro-global-bezier 0s;
-}
-
-// dropdown
-%dropdown-menu {
-  @extend %ro-global-transition;
-  position: absolute;
-  z-index: 100;
-}
-%dropdown-menu-hide {
-  -ms-transform: scaleY(0);
-  -webkit-transform: scaleY(0);
-  transform: scaleY(0);
-  -ms-transform-origin: top;
-  -webkit-transform-origin: top;
-  transform-origin: top;
-}
-%dropdown-menu-show {
-  -ms-transform: scaleY(1);
-  -webkit-transform: scaleY(1);
-  transform: scaleY(1);
 }
 
 // flex-video

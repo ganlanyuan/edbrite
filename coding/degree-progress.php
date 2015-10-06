@@ -6,15 +6,15 @@
 
 <div class="banner banner-info banner-section banner-report">
   <div class="container">
-    <h2 class="h2">degree progress report</h2>
+    <h2 class="h3">degree progress report</h2>
   </div>
 </div>
 
-<div class="">
+<div class="report">
   <div class="container">
     <ul>
-      <li>Student name: John Smith</li>
-      <li>student ID: 294812</li>
+      <li>Student name: <span>John Smith</span></li>
+      <li>student ID: <span>294812</span></li>
     </ul>
     <section>
       <h4>Term: Fall 2014</h4>

@@ -5,10 +5,11 @@
 .h2 { 
   @extend %global-transition;
   @include type(25px 1.2 center); 
+  margin-bottom: 1em;
 }
 .h3 { 
   @include type(23px weight-normal); 
-  color: #666;
+  // color: #666;
 }
 .h4 { @include type(17px uppercase); }
 // .h5 { @include type(15px 700); }
@@ -32,8 +33,8 @@ p {
   .tips { @include type(14px); }
 }
 @include breakpoint(min 1100) {
-  .h2 { @include type(41px); }
-  .h3 { @include type(36px); }
+  .h2 { @include type(38px); }
+  .h3 { @include type(32px); }
   .tips { @include type(16px); }
   p { @include type(18px); }
 }

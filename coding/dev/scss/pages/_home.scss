@@ -1,6 +1,70 @@
 // home
 // ===========
 
+.section {
+  padding: 6% 0;
+  h3 {
+    @include type(22px);
+    margin-bottom: 1em;
+  }
+}
+
+.gallery-2 {
+  @include bp('max' 799) {
+    > li { margin-bottom: 30px !important; }
+  }
+  @include bp('min' 800) { @include gallery(2); }
+}
+.compare {
+  text-align: center; 
+  span {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.5em;
+    margin-right: 0.5em;
+    border-radius: 50%;
+    img {
+      width: 13px;
+    }
+  }
+  li {
+    font-size: 16px;
+    margin: 1em 0;
+  }
+}
+.bad span { background-color: map-get($alerts, 'danger'); }
+.good span { background-color: map-get($alerts, 'success'); }
+
+.home-e-learning {
+  text-align: center;
+  background-color: map-get($alerts, 'warning');
+  p { 
+    @include type(16px); 
+    max-width: 30em;
+    margin-left: auto;
+    margin-right: auto;
+    color: #000;
+  }
+}
+
+.home-hassle-free {
+  @include bp('max' 799) {
+    text-align: center;
+    .h2 { margin-top: 30px;}
+  }
+  @include bp('min' 800) {
+    img {
+      float: left;
+      width: 45%;
+      margin-right: 30px;
+    }
+    .h2 { text-align: left; }
+  }
+}
+.get-started {
+  background-color: #f5f5f5;
+}
 .form-signup-3m {
   max-width: 860px;
 }

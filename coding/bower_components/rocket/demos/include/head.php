@@ -15,83 +15,15 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 	<!-- <meta http-equiv="cleartype" content="on"> -->
-  <title> <?php 
-		if ($pagename == 'index') {
-			echo 'Rocket';
-		} 
-		if ($pagename == 'layout-grid') {
-			echo 'layout-grid';
-		} 
-		if ($pagename == 'layout-gallery') {
-			echo 'layout-gallery';
-		} 
-		if ($pagename == 'layout-justify') {
-			echo 'layout-justify';
-		} 
-		if ($pagename == 'layout-center') {
-			echo 'layout-center';
-		} 
-		if ($pagename == 'layout-two-columns') {
-			echo 'layout-two-columns';
-		} 
-		if ($pagename == 'layout-debug') {
-			echo 'layout-debug';
-		} 
-		if ($pagename == 'slider-carousel') {
-			echo 'slider-carousel';
-		} 
-		if ($pagename == 'slider-gallery') {
-			echo 'slider-gallery';
-		} 
-		if ($pagename == 'components-button') {
-			echo 'components-button';
-		} 
-		if ($pagename == 'components-media-list') {
-			echo 'components-media-list';
-		} 
-		if ($pagename == 'components-offcanvas') {
-			echo 'components-offcanvas';
-		} 
-		if ($pagename == 'components-dropdown') {
-			echo 'components-dropdown';
-		} 
-		if ($pagename == 'components-tooltip') {
-			echo 'components-tooltip';
-		} 
-		if ($pagename == 'components-flex-video') {
-			echo 'components-flex-video';
-		} 
-		if ($pagename == 'addons-type') {
-			echo 'addons-type';
-		} 
-		if ($pagename == 'addons-visibility') {
-			echo 'addons-visibility';
-		} 
-		if ($pagename == 'addons-breakpoint') {
-			echo 'addons-breakpoint';
-		} 
-		if ($pagename == 'color-contrast') {
-			echo 'color-contrast';
-		} 
-		if ($pagename == 'color-adjacent') {
-			echo 'color-adjacent';
-		} 
-		if ($pagename == 'color-complementary') {
-			echo 'color-complementary';
-		} 
-		if ($pagename == 'color-split-complementary') {
-			echo 'color-split-complementary';
-		} 
-		if ($pagename == 'color-triad') {
-			echo 'color-triad';
-		} 
-		if ($pagename == 'color-rectangle') {
-			echo 'color-rectangle';
-		} 
-		if ($pagename == 'color-square') {
-			echo 'color-square';
-		} 
-  ?> </title>
+  <title> 
+	  <?php 
+			if ($pagename == 'index') {
+				echo 'Rocket';
+			} else {
+				echo 'Rocket - ' . $pagename;
+			}
+	  ?> 
+  </title>
 	
 	<meta name="description" content="">
 	<meta name="author" content="">
@@ -110,81 +42,7 @@
 	<link href="css/normalize.css" rel="stylesheet">
 
   <link <?php 
-		if ($pagename == 'index') {
-			echo 'href="css/test.css"';
-		} 
-		if ($pagename == 'layout-grid') {
-			echo 'href="css/layout-grid.css"';
-		} 
-		if ($pagename == 'layout-gallery') {
-			echo 'href="css/layout-gallery.css"';
-		} 
-		if ($pagename == 'layout-justify') {
-			echo 'href="css/layout-justify.css"';
-		} 
-		if ($pagename == 'layout-center') {
-			echo 'href="css/layout-center.css"';
-		} 
-		if ($pagename == 'layout-two-columns') {
-			echo 'href="css/layout-two-columns.css"';
-		} 
-		if ($pagename == 'layout-debug') {
-			echo 'href="css/layout-debug.css"';
-		} 
-		if ($pagename == 'slider-carousel') {
-			echo 'href="css/slider-carousel.css"';
-		} 
-		if ($pagename == 'slider-gallery') {
-			echo 'href="css/slider-gallery.css"';
-		} 
-		if ($pagename == 'components-button') {
-			echo 'href="css/components-button.css"';
-		} 
-		if ($pagename == 'components-media-list') {
-			echo 'href="css/components-media-list.css"';
-		} 
-		if ($pagename == 'components-offcanvas') {
-			echo 'href="css/components-offcanvas.css"';
-		} 
-		if ($pagename == 'components-dropdown') {
-			echo 'href="css/components-dropdown.css"';
-		} 
-		if ($pagename == 'components-tooltip') {
-			echo 'href="css/components-tooltip.css"';
-		} 
-		if ($pagename == 'components-flex-video') {
-			echo 'href="css/components-flex-video.css"';
-		} 
-		if ($pagename == 'addons-type') {
-			echo 'href="css/addons-type.css"';
-		} 
-		if ($pagename == 'addons-visibility') {
-			echo 'href="css/addons-visibility.css"';
-		} 
-		if ($pagename == 'addons-breakpoint') {
-			echo 'href="css/addons-breakpoint.css"';
-		} 
-		if ($pagename == 'color-contrast') {
-			echo 'href="css/color-contrast.css"';
-		} 
-		if ($pagename == 'color-adjacent') {
-			echo 'href="css/color-adjacent.css"';
-		} 
-		if ($pagename == 'color-complementary') {
-			echo 'href="css/color-complementary.css"';
-		} 
-		if ($pagename == 'color-split-complementary') {
-			echo 'href="css/color-split-complementary.css"';
-		} 
-		if ($pagename == 'color-triad') {
-			echo 'href="css/color-triad.css"';
-		} 
-		if ($pagename == 'color-rectangle') {
-			echo 'href="css/color-rectangle.css"';
-		} 
-		if ($pagename == 'color-square') {
-			echo 'href="css/color-square.css"';
-		} 
+  	echo 'href="css/' . $pagename . '.css"';
   ?> rel="stylesheet">
 
 	<!-- javascript -->

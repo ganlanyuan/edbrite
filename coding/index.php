@@ -18,32 +18,34 @@
   </div>
 </div>
 
-<div class="container">
-  <div class="compare">
-    <div class="compare-items">
-      <h2>How most education technology works</h2>
-      <ul>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li>Earum quis molestiae enim! Beatae!</li>
-        <li>Saepe molestiae corporis, eum ullam.</li>
-        <li>Saepe porro animi nobis natus.</li>
-      </ul>
-    </div>
-    <div class="compare-items">
-      <h2>How EdBrite works</h2>
-      <ul>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li>Tempora porro, veniam temporibus ut.</li>
-        <li>Dolores suscipit ipsa, delectus ipsam.</li>
-        <li>Saepe eligendi expedita, earum. Sapiente!</li>
-      </ul>
-    </div>
+<div class="section">
+  <div class="container">
+    <ul class="compare gallery-2">
+      <li>
+        <h3>How most education technology works</h3>
+        <ul class="bad">
+          <li><span><img src="assets/img/no.png" alt=""></span>Lorem ipsum dolor sit amet.</li>
+          <li><span><img src="assets/img/no.png" alt=""></span>Earum quis molestiae enim! Beatae!</li>
+          <li><span><img src="assets/img/no.png" alt=""></span>Saepe molestiae corporis, eum ullam.</li>
+          <li><span><img src="assets/img/no.png" alt=""></span>Saepe porro animi nobis natus.</li>
+        </ul>
+      </li>
+      <li>
+        <h3>How EdBrite works</h3>
+        <ul class="good">
+          <li><span><img src="assets/img/yes.png" alt=""></span>Lorem ipsum dolor sit amet.</li>
+          <li><span><img src="assets/img/yes.png" alt=""></span>Tempora porro, veniam temporibus ut.</li>
+          <li><span><img src="assets/img/yes.png" alt=""></span>Dolores suscipit ipsa, delectus ipsam.</li>
+          <li><span><img src="assets/img/yes.png" alt=""></span>Saepe eligendi expedita apiente!</li>
+        </ul>
+      </li>
+    </ul>
   </div>
 </div>
 
-<div class="home-e-learning">
+<div class="home-e-learning section">
   <div class="container">
-    <h2>New to Education Technology? <br>Our E-learning tools are designed for: </h2>
+    <h2 class="h2">New to Education Technology? <br>Our E-learning tools are designed for: </h2>
     <ul class="gallery-2">
       <li>
         <h3>Blended Learning</h3>
@@ -59,14 +61,15 @@
   </div>
 </div>
 
-<div class="home-hassle-free">
+<div class="home-hassle-free section">
   <div class="container">
     <img src="http://placehold.it/600x400/eee/eee" alt="">
-    <h2>Simple, Hassle-Free Setup</h2>
+    <h2 class="h2">Simple, Hassle-Free Setup</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos ad similique, consequuntur quo! Iure repellat iste ex fugit doloremque placeat, mollitia nihil maiores animi omnis. Ab repellat asperiores, veniam laboriosam.</p>
   </div>
 </div>
-<div class="get-started">
+
+<div class="get-started section">
   <div class="container">
     <h2 class="h2">Ready to get started?</h2>
     <div class="tips home-tips">Sign up for a no obligation, free 3-month account.</div>

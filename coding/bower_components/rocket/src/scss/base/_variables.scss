@@ -3,9 +3,9 @@
 
 // layout
 $ro-layout: (
-  container: 1024px,
-  columns: 12,
-  gutter: 2%,
+  'container': 1024px,
+  'columns': 12,
+  'gutter': 2%,
 ) !default;
 
 // base
@@ -36,6 +36,15 @@ $ro-offcanvas-styles: 'move', 'translate', 'reveal' !default;
 $ro-offcanvas-direction: left, right !default;
 $ro-offcanvas-length: 12;
 
+// nav
+$ro-nav-direction: left, right, top, bottom !default;
+$ro-nav-styles: 'slide-in', 'slide-along', 'slide-out', 'rotate-in', 'rotate-out', 'rotate-in-reverse', 'scale-down', 'scale-up', 'open-door', 'push', 'reveal', 'drawer' !default;
+$ro-nav-z-index: (
+  'page': 201,
+  'nav': 200,
+  'page-overlay': 199,
+) !default;
+
 // button
 $ro-button-radius: 0.22em !default;
 $ro-button-round: 1000px !default;
@@ -48,6 +57,10 @@ $ro-tooltip-radius: 0.22em !default;
 // dropdown
 $ro-dropdown-show: 'hover', 'click' !default;
 $ro-dropdown-style: 'display', 'scale' !default;
+$ro-dropdown-direction: left, right !default;
+
+// tabs
+$ro-tabs-style: 'normal', 'carousel', 'customize' !default;
 
 // color functions
 $ro-loops : 0;

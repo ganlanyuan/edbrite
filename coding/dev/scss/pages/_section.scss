@@ -1,6 +1,28 @@
 // section
 // =============
 
+.img-list {
+  max-width: 800px;
+  margin: 2em auto;
+  @include bp('min' 640) {
+    > li {
+      @extend %clearfix;
+      text-align: left !important;
+      margin-bottom: 40px;
+    }
+    img {
+      float: left;
+      margin-right: 20px;
+    }
+  }
+}
+.more {
+  @include type(12px uppercase);
+  text-decoration: underline;
+  &:hover {
+    color: map-get($alerts, 'danger');
+  }
+}
 // features
 .gallery-features {
   text-align: center;
@@ -123,5 +145,47 @@
   }
   img:last-child {
     margin-bottom: em(-55);
+  }
+}
+
+// tour
+.management-system {
+  p {
+    max-width: 50em;
+    margin: 2em auto;
+  }
+  h4 {
+    @include type(22px);
+    margin-bottom: 1em;
+  }
+  li {
+    p { @include type(15px); }
+  }
+  .gallery-2 {
+    p {
+      max-width: 28em;
+      margin-bottom: 1em; 
+    }
+  }
+}
+
+// degress progress report
+.report {
+  max-width: 800px;
+  margin: 50px auto;
+  li {
+    font-size: 13px;
+    margin: 0.5em 0;
+    color: #999;
+    span {
+      color: #000;
+    }
+  }
+  section {
+    padding: 30px 0;
+  }
+  h4 {
+    @include type(20px);
+    margin-bottom: 1em;
   }
 }

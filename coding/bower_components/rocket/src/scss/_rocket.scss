@@ -1,5 +1,5 @@
-// Rocket v2.2.1
-// 06-26-2015
+// Rocket v2.5.2
+// 08-24-2015
 // Created by William Lin (ganlanyuan@gmail.com)
 // Licensed under MIT Open Source
 // =============================================
@@ -38,6 +38,7 @@
 @import "addons/visible"; // @required [mixin] breakpoint
 @import "addons/hidden"; // @required [mixin] breakpoint
 @import "addons/type";
+@import "addons/font-size";
 
 // layout
 @import "layout/function/span";
@@ -54,7 +55,15 @@
 @import "components/button"; // @require [function] contrast
 @import "components/media";
 @import "components/offcanvas";  // @require [mixin] transform, transition-delay and [function] contrast, analogous
+@import "components/mobile-nav";  // @require [mixin] transform, transform-origin, transform-style, nav-map, opacity, breakpoint
 @import "components/dropdown";
+@import "components/tabs";
+@import "components/switch";
+@import "components/accordion";
+@import "components/push-toggle";
+@import "components/checkbox";
 @import "components/tooltip";
 @import "components/flex-video";
+@import "components/slider-carousel";
+@import "components/slider-gallery";
 

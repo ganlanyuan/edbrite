@@ -1,6 +1,6 @@
 {
   "name": "rocket",
-  "version": "2.2.1",
+  "version": "2.5.3",
   "main": [
     "./src/scss/rocket.scss",
     "./src/js/kit.js",
@@ -40,13 +40,14 @@
     "url": "https://github.com/ganlanyuan/rocket.git"
   },
   "dependencies": {},
-  "_release": "2.2.1",
+  "_release": "2.5.3",
   "_resolution": {
     "type": "version",
-    "tag": "v2.2.1",
-    "commit": "ed5626718dd15593f59f0bac0f76b2ca9600c3aa"
+    "tag": "v2.5.3",
+    "commit": "49a7bb901e14e38de42cf2ad72f4e8e65399e7e2"
   },
   "_source": "git://github.com/ganlanyuan/rocket.git",
-  "_target": "2.2.1",
-  "_originalSource": "rocket"
+  "_target": "2.5.3",
+  "_originalSource": "rocket",
+  "_direct": true
 }

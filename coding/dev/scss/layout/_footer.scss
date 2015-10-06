@@ -3,12 +3,31 @@
 
 .site-foot {
   padding: 20px 0;
+  color: #fff;
   background-color: #383838;
-  li {
-    font-size: 12px;
+}
+.foot-links {
+  // max-width: 900px;
+  h4 {
+    @include type(14px weight-normal capitalize);
+    margin-bottom: 10px;
   }
+  li { @include type(12px capitalize); }
   a { 
-    color: #fff; 
-    text-decoration: underline;
+    display: block;
+    padding: 0.3em 0;
+    color: lighten(#383838, 40%); 
+    text-decoration: none;
+    transition: color 0.3s;
+    &:hover {
+      color: #fff;
+    }
+  }
+  @include gallery(2 child section);
+  @include bp('min' 500) {
+    @include gallery(3 child section);
+  }
+  @include bp('min' 640) {
+    @include gallery(4 child section);
   }
 }
