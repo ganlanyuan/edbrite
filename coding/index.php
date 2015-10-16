@@ -22,22 +22,26 @@
   <div class="container">
     <ul class="compare gallery-2">
       <li>
-        <h3>How most education technology works</h3>
-        <ul class="bad">
-          <li><span><img src="assets/img/no.png" alt=""></span>Lorem ipsum dolor sit amet.</li>
-          <li><span><img src="assets/img/no.png" alt=""></span>Earum quis molestiae enim! Beatae!</li>
-          <li><span><img src="assets/img/no.png" alt=""></span>Saepe molestiae corporis, eum ullam.</li>
-          <li><span><img src="assets/img/no.png" alt=""></span>Saepe porro animi nobis natus.</li>
-        </ul>
+        <div class="compare-others">
+          <h3>How most education technology works</h3>
+          <ul>
+            <li><span><img src="assets/img/icons/compare-1.png" alt=""></span><span>Lorem ipsum dolor sit amet.</span></li>
+            <li><span><img src="assets/img/icons/compare-3.png" alt=""></span><span>Earum quis molestiae enim! Beatae!</span></li>
+            <li><span><img src="assets/img/icons/compare-5.png" alt=""></span><span>Saepe molestiae corporis, eum ullam.</span></li>
+            <li><span><img src="assets/img/icons/compare-7.png" alt=""></span><span>Saepe porro animi nobis natus.</span></li>
+          </ul>
+        </div>
       </li>
       <li>
-        <h3>How EdBrite works</h3>
-        <ul class="good">
-          <li><span><img src="assets/img/yes.png" alt=""></span>Lorem ipsum dolor sit amet.</li>
-          <li><span><img src="assets/img/yes.png" alt=""></span>Tempora porro, veniam temporibus ut.</li>
-          <li><span><img src="assets/img/yes.png" alt=""></span>Dolores suscipit ipsa, delectus ipsam.</li>
-          <li><span><img src="assets/img/yes.png" alt=""></span>Saepe eligendi expedita apiente!</li>
-        </ul>
+        <div class="compare-edbrite">
+          <h3>How EdBrite works</h3>
+          <ul>
+            <li><span><img src="assets/img/icons/compare-2.png" alt=""></span><span>Lorem ipsum dolor sit amet.</span></li>
+            <li><span><img src="assets/img/icons/compare-4.png" alt=""></span><span>Tempora porro, veniam temporibus ut.</span></li>
+            <li><span><img src="assets/img/icons/compare-6.png" alt=""></span><span>Dolores suscipit ipsa, delectus ipsam.</span></li>
+            <li><span><img src="assets/img/icons/compare-8.png" alt=""></span><span>Saepe eligendi expedita apiente!</span></li>
+          </ul>
+        </div>
       </li>
     </ul>
   </div>
@@ -49,12 +53,12 @@
     <ul class="gallery-2">
       <li>
         <h3>Blended Learning</h3>
-        <img src="http://placehold.it/300x200/eee/eee" alt="">
+        <img src="assets/img/e-learning-1.png" alt="">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quis quisquam qui est eos, asperiores explicabo sed, eligendi a numquam!</p>
       </li>
       <li>
         <h3>Blended Learning</h3>
-        <img src="http://placehold.it/300x200/eee/eee" alt="">
+        <img src="assets/img/e-learning-2.png" alt="">
         <p>Nobis voluptate iure corporis, ea laboriosam? Eum culpa aliquid omnis, illo magnam, velit nemo repellendus fugiat delectus quis, placeat ipsam.</p>
       </li>
     </ul>
@@ -63,7 +67,7 @@
 
 <div class="home-hassle-free section">
   <div class="container">
-    <img src="http://placehold.it/600x400/eee/eee" alt="">
+    <img src="assets/img/hassle-free.png" alt="">
     <h2 class="h2">Simple, Hassle-Free Setup</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos ad similique, consequuntur quo! Iure repellat iste ex fugit doloremque placeat, mollitia nihil maiores animi omnis. Ab repellat asperiores, veniam laboriosam.</p>
   </div>

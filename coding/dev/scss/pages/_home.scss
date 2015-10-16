@@ -16,25 +16,39 @@
   @include bp('min' 800) { @include gallery(2); }
 }
 .compare {
-  text-align: center; 
-  span {
-    display: inline-block;
-    width: 1.5em;
-    height: 1.5em;
-    line-height: 1.5em;
-    margin-right: 0.5em;
-    border-radius: 50%;
-    img {
-      width: 13px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  &-edbrite {
+    background-color: #f5f5f5;
+    border-radius: 7px;
+    overflow: hidden;
+    > h3 {
+      color: #fff;
+      background-color: map-get($alerts, 'success');
     }
   }
-  li {
-    font-size: 16px;
-    margin: 1em 0;
+  h3 { 
+    padding: 20px 30px; 
+    margin-bottom: 0;
+  }
+  ul { 
+    padding: 15px 30px; 
+    > li {
+      font-size: 16px;
+      margin: 1.5em 0;
+    }
+  }
+  span {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  img {
+    width: 70px;
+    margin-right: 15px;
+    vertical-align: middle;
   }
 }
-.bad span { background-color: map-get($alerts, 'danger'); }
-.good span { background-color: map-get($alerts, 'success'); }
 
 .home-e-learning {
   text-align: center;

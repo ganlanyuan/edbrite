@@ -20,6 +20,7 @@
   p { color: #fff; }
   &-home {
     @extend %clearfix;
+    margin-bottom: 0;
     img { max-width: 90%; }
     .title {
       @extend %global-transition;
