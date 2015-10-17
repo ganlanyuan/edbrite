@@ -17,7 +17,7 @@
   @include breakpoint(min 1200) {
     padding: em(50) 0;
   }
-  p { color: #fff; }
+  p { color: inherit; }
   &-home {
     @extend %clearfix;
     margin-bottom: 0;

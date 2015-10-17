@@ -65,11 +65,19 @@
   </div>
 </div>
 
-<div class="home-hassle-free section">
+<div class="home-hassle-free media media-left section">
   <div class="container">
     <img src="assets/img/hassle-free.png" alt="">
     <h2 class="h2">Simple, Hassle-Free Setup</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos ad similique, consequuntur quo! Iure repellat iste ex fugit doloremque placeat, mollitia nihil maiores animi omnis. Ab repellat asperiores, veniam laboriosam.</p>
+  </div>
+</div>
+
+<div class="home-interface media media-right section">
+  <div class="container">
+    <img src="assets/img/interface.png" alt="">
+    <h2 class="h2">Translated, multi-lingual interface</h2>
+    <p>Obcaecati dolore doloribus modi, quidem. Id harum, quas voluptatem quam fugiat provident aut eius illo. Consequatur nesciunt, facere, magnam harum inventore totam repellat nulla beatae sit est omnis quibusdam a.</p>
   </div>
 </div>
 

@@ -13,5 +13,15 @@ ready(function () {
     } else {
       k('.site-head').removeClass('scrolled');
     }
-  }
+  };
+
+  k('.js-pagenav a').click(function(e) {
+    var id = k(this).attr('href'),
+        headerH = k('.site-head').outerHeight(),
+        target = k(id).getTop() - headerH - 20;
+
+    scrollTo(target, 400);
+
+    (e.preventDefault) ? e.preventDefault() : e.returnValue;
+  });
 })

@@ -67,3 +67,20 @@
    }
   }
 }
+
+// subnav
+.subnav {
+  @include type(14px capitalize);
+  margin-bottom: 2em;
+  background: #f5f5f5;
+  a {
+    display: block;
+    padding: 0.5em 1.2em;
+    transition: background-color 0.3s;
+    &:hover {
+      background: darken(#f5f5f5, 5%);
+    }
+  }
+  li:first-child > a { padding-top: 1em; }
+  li:last-child > a { padding-bottom: 1em; }
+}
